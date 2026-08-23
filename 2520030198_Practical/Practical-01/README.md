@@ -1,6 +1,6 @@
-Practical-01: Linux Process Creation and Command Execution
+ # Practical-01: Linux Process Creation and Command Execution
 
-Aim
+ # Aim : 
 To develop a C program that accepts a Linux command from the user and executes it using process creation and system calls.
 # Linux Process Execution Using fork(), exec(), and wait()
 
