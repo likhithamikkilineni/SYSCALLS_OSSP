@@ -16,7 +16,6 @@ else if (pid > 0)
 {
 printf("Parent Process\n");
 printf("Parent PID: %d\n", getpid());
-printf("Parent's Parent PID: %d\n", getppid());
 printf("Parent process is running\n");
 }
 else
