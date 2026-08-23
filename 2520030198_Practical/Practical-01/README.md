@@ -1,8 +1,10 @@
 Practical-01: Linux Process Creation and Command Execution
+
+Aim
+To develop a C program that accepts a Linux command from the user and executes it using process creation and system calls.
 # Linux Process Execution Using fork(), exec(), and wait()
 
 About the Assignment:
-
 This project demonstrates how the Linux operating system executes a command entered by a user. The program creates a new process using fork(), executes the user-entered command in the child process using an execlp system call   makes the parent process wait until the child process finishes using wait().
 
  System Calls Used:
