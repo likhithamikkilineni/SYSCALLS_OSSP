@@ -1,1 +1,43 @@
+# Control transitions between User Space and Kernel Space during execution
+
+A program normally starts executing in User Space.
+User Space cannot directly access hardware resources.
+When a file operation is needed, the program makes a system call.
+The system call transfers control from User Space to Kernel Space.
+The kernel performs the requested operation safely.
+After completing the operation, the kernel returns control to User Space.
+This transition happens for every system call such as open(), read(), write(), and close().
+ ---------------------------------------------------------------------------------------------
+ # Execution Flow
+
+open() → Kernel opens the file.
+read() → Kernel reads data from the file.
+write() → Kernel writes data to the destination file.
+close() → Kernel closes the opened files.
+The program ends after all operations are completed.
+---------------------------------------------------------------------------------------------------
+ # strace : 
+strace is a Linux utility used to trace all the system calls made by a program.
+It shows how a program communicates with the Linux kernel during execution.
+It is mainly used for debugging and analyzing system call behavior.
+
+---------------------------------------------------------------------------------------------------
+
+## User Space to Kernel Space Transition
+
+The basic flow is:
+
+```text
+User Program
+     ↓
+System Call
+     ↓
+User Space → Kernel Space
+     ↓
+Kernel Service
+     ↓
+Kernel Space → User Space
+     ↓
+Program Continues
+
 
