@@ -12,6 +12,6 @@ n=read(fd1,buf,100);
 write(fd2,buf,n);
 close(fd1);
 close(fd2);
-printf("file copied succesfully");
+printf("file copied succesfully\n");
 }
 
