@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<unistd.h>
+#include<sys/wait.h>
 int main()
 {
 char  buff[100];
@@ -24,6 +25,7 @@ else
 printf("Parent Process\n");
 printf("Parent PID: %d\n", getpid());
 printf("Child PID: %d\n", pid);
+wait(NULL);
 printf("Child process completed\n");
 }
 }
