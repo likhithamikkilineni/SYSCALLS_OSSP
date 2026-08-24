@@ -29,42 +29,6 @@ To implement an interactive main loop that displays a prompt, captures keyboard 
 - `read()` – Reads one character from standard input.
 - `write()` – Writes characters to standard output.
 
-## CONTROL FLOW
-
-START
-
-  |
-  v
-Display Prompt
-  |
-  v
-Read Character
-  |
-  v
-Is Character Backspace?
-  |              |
- Yes             No
-  |              |
-  v              v
-Remove       Is Character Enter?
-Character       |          |
-  |            Yes         No
-  |             |           |
-  |             v           v
-  |        Process Buffer  Store Character
-  |             |
-  |             v
-  |        Is exit/quit?
-  |          |       |
-  |         Yes      No
-  |          |        |
-  |          v        v
-  |         END   Display Command
-  |                   |
-  |                   v
-  |             Display Prompt
-  |                   |
-  └───────────────────┘
 
 ## TESTING
 
