@@ -1,1 +1,15 @@
+ **Requirement**               **Implementation / Meaning**                                                                
+ ----------------------------  --------------------------------------------------------------------------------------------
+ **Main Loop**                 `int main()` – starting point of the C program.                                             
+ **Display Prompt**            `printf()` – displays a prompt or message to the user.                                      
+ **Read User Input**           `scanf()` or `read()` – accepts input from the user.                                        
+ **Handle Exit Conditions**    `if`, `else`, and `break` – used to check conditions and exit the program.                  
+ **Control Flow Diagram**      A flowchart that shows the sequence of program execution.                                   
+ **Test Interactive Loop**     Run the program repeatedly and provide different inputs to test it.                         
+ **Capture Keyboard Input**    `scanf()` or `read()` – captures input entered through the keyboard.                        
+ **Handle Backspace**          Character-by-character input handling can be used to detect and process Backspace.           
+ **Process Enter Key**         The Enter key can be identified using the newline character `'\n'`.                          
+ **Manage Input Buffer**       A character array such as `char buf[100]` is used to store user input.                       
+ **Multi-Character Commands**  A character array/string such as `char command[100]` stores multiple characters or commands. 
+ **Test User Interaction**      Execute the program with different inputs and verify the displayed output.                   
 
