@@ -32,6 +32,7 @@ To implement an interactive main loop that displays a prompt, captures keyboard 
 ## CONTROL FLOW
 
 START
+
   |
   v
 Display Prompt
