@@ -1,1 +1,55 @@
+# IPC Using Pipes
 
+## 1. Producer-Consumer using Anonymous Pipe
+
+### Aim
+
+To implement communication between a parent (Producer) and child (Consumer) using an anonymous pipe and measure communication efficiency.
+
+### System Calls
+
+* `pipe()` – Creates a pipe.
+* `fork()` – Creates a child process.
+* `write()` – Sends data through the pipe.
+* `read()` – Receives data from the pipe.
+* `close()` – Closes unused pipe ends.
+* `clock_gettime()` – Measures communication time.
+
+
+```
+
+---
+
+## 2. Implement `ls -l | grep ".c"`
+
+### Aim
+
+To implement the shell command `ls -l | grep ".c"` using system calls.
+
+### System Calls
+
+* `fork()` – Creates processes.
+* `pipe()` – Connects the processes.
+* `dup2()` – Redirects input/output.
+* `exec()` – Executes `ls` and `grep`.
+* `wait()` – Waits for child processes.
+
+### Flow
+
+```text
+ls -l → PIPE → grep ".c" → Output
+```
+
+### Easy Memory
+
+```text
+fork() → Create
+pipe() → Connect
+dup2() → Redirect
+exec() → Execute
+wait() → Wait
+```
+
+## Conclusion
+
+Pipes allow processes to communicate, while `fork()`, `dup2()`, and `exec()` are used to implement shell pipelines.
